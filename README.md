@@ -1,2 +1,4 @@
 # Migration-of-Web-Server-from-AWS-to-OCI
-This project involved migrating a web server and domain from AWS to Oracle Cloud Infrastructure (OCI). Using a site-to-site VPN Tunnel, the server was moved from AWS EC2 with Nginx to OCI compute instances. Image transfer between Amazon S3 and OCI Object Storage was done using rclone, followed by testing to ensure proper functionality.
+This project focused on moving a fully operational web server and its domain from AWS to Oracle Cloud Infrastructure (OCI). The migration was done using a secure site-to-site VPN tunnel to transfer data between AWS and OCI with minimal downtime. The web server, which was running on AWS EC2 with Nginx, was set up again on OCI compute instances. The domain configuration was also updated to direct traffic to the new OCI infrastructure.
+
+Image transfer between Amazon S3 and OCI Object Storage was performed using the open-source tool rclone, ensuring all server files and configurations were moved efficiently. After the migration, thorough testing was done to confirm the web server was working correctly and the domain was resolving properly in the new OCI setup.
