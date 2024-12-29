@@ -25,15 +25,25 @@ Create Virtual Private Gateway and then attach it to the VPC.
 
 ![Screenshot from 2024-12-07 01-31-22](https://github.com/user-attachments/assets/44155df3-a9e4-46e8-a6b6-42ce99585515)
 
-# Step 4 - Create the VPN connection and download the configuration
+# Step 4 - Create Site to Site VPN connection and download the configuration
 A VPN Connection is the actual secure link established between the AWS VPC and the OCI Virtual Cloud Network (VCN) through the internet.
 Create a VPN connection and per the configuration mentioned in below screenshot. Make sure to select the CGW and VGW
 
 ![Screenshot from 2024-12-07 14-45-34](https://github.com/user-attachments/assets/5798b464-5a3c-49b5-be9b-0cdfb137f3ad)
 
-Download the configuration and select the option as mentioned in below screenshot
+Select the option as mentioned in below screenshot and download the configuration file.
 
 ![Screenshot from 2024-12-07 15-01-33](https://github.com/user-attachments/assets/e0fc2859-bafa-427d-b715-3e7ce9623413)
+
+## Open the configuration file, make sure to note down the below parameters which we will use in further steps (The values will be different in your case).
+
+![image](https://github.com/user-attachments/assets/2256280f-562f-46f5-843d-4c6729a4b1fc)
+
+## In the above steps we created the VPC, CGW and VGW in AWS. Now we would need to create the same in OCI. The concept and functionality is same but the name changes on OCI side. Please refer below.
+
+Virtual Private Cloud (VPC) --> Vrtual Cloud Network (VCN)
+Virtual Private Gateway (VGW) --> Dynamic Rouing Gateway (DRG)
+Customer Gateway (CGW) --> Customer Premise Equipment (CPE)
 
 
 
